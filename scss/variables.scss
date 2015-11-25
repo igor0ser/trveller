@@ -1,0 +1,7 @@
+$gold: #efc75e;
+
+.clearfix::after{
+	display: table;
+	content: '';
+	clear: both;
+}
