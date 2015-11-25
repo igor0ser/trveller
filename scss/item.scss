@@ -1,0 +1,42 @@
+.item {
+	box-sizing: border-box;
+	float: left;
+
+	width: 317px;
+	height: 230px;
+	margin: 8px;
+
+	cursor: pointer;
+
+	opacity: .9;
+	border: 1px solid white;
+	box-shadow: 0 5px 30px rgba(0, 0, 0, .6);
+}
+
+.item1{
+	background: url(img/thumbs/i1.jpg);
+}
+.item2{
+	background: url(img/thumbs/i2.jpg);
+}
+.item3{
+	background: url(img/thumbs/i3.jpg);
+}
+.item4{
+	background: url(img/thumbs/i4.jpg);
+}
+.item5{
+	background: url(img/thumbs/i5.jpg);
+}
+.item6{
+	background: url(img/thumbs/i6.jpg);
+}
+.item7{
+	background: url(img/thumbs/i7.jpg);
+}
+.item8{
+	background: url(img/thumbs/i8.jpg);
+}
+.item9{
+	background: url(img/thumbs/i9.jpg);
+}

@@ -8,15 +8,31 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<div class="bg" hidden></div>
+	<div class="bg"></div>
 	<input id="search-input" type="checkbox" hidden>
 	<header class="header clearfix">
 		<a class="header-logo">Traveller</a>
 		<label class="header-search" for="search-input"></label>
 	</header>
-	<div class="content"></div>
+	<div class="content">
+		<section class="item item1" data-bg="img/i1.jpg"></section>
+		<section class="item item2" data-bg="img/i2.jpg"></section>
+		<section class="item item3" data-bg="img/i3.jpg"></section>
+		<section class="item item4" data-bg="img/i4.jpg"></section>
+		<section class="item item5" data-bg="img/i5.jpg"></section>
+		<section class="item item6" data-bg="img/i6.jpg"></section>
+		<section class="item item7" data-bg="img/i7.jpg"></section>
+		<section class="item item8" data-bg="img/i8.jpg"></section>
+		<section class="item item9" data-bg="img/i9.jpg"></section>
+	</div>
+
 	<div class="search">
 		<label for="search-input" class="search-close">X</label>
 		<input class="search-input" type="text" placeholder="Type here please" autofocus>
 	</div>
+
+	<script src="jquery-2.1.4.min.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>

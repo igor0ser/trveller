@@ -2,17 +2,17 @@
 @import 'variables';
 
 .header {
+	position: relative;
+	z-index: 2;
+
 	box-sizing: border-box;
-	width: 1000px;
+	width: 1040px;
 	margin: auto;
 	padding: 10px 40px;
 
 	border-bottom-right-radius: 32px;
 	border-bottom-left-radius: 32px;
 	background: #333;
-	z-index: 2;
-	position: relative;
-
 
 	&-logo {
 		font-family: 'Pacifico';
@@ -28,6 +28,8 @@
 		height: 62px;
 		padding-right: 20px;
 		padding-left: 64px;
+
+		cursor: pointer;
 
 		color: #fff;
 		border: 3px solid $gold;
