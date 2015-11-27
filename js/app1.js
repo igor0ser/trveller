@@ -37,6 +37,12 @@ $(document).on('ready', function(){
 		}
 	})
 
+		$('#search-input').on('change', function(){
+			if ($(this).prop('checked')){
+				$('.search-input').focus();
+			}
+		})
+
 	for (var i = 1; i < 10; i++){
 		var image = new Image();
 		image.src = "img/i" + i + ".jpg";
@@ -44,4 +50,6 @@ $(document).on('ready', function(){
 		console.log('Картинка в кэше!');
 		};
 	}
+
+
 })

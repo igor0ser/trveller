@@ -83,5 +83,7 @@ travellerApp.controller('JourneysList',function($scope){
 
 
 
+
 });
+
 
