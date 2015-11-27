@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="travellerApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Traveller</title>
@@ -7,7 +7,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body ng-controller="JourneysList">
 	<div class="bg" hidden></div>
 	<div class="bg"></div>
 	<input id="search-input" type="checkbox" hidden>
@@ -16,7 +16,27 @@
 		<label class="header-search" for="search-input"></label>
 	</header>
 	<div class="content">
-		<section class="item item1" data-bg="img/i1.jpg"></section>
+	<h1 class="content-header">Hot tours + {{journeys.length}}</h1>
+
+	<section ng-repeat="journey in journeys" class="item" data-bg="{{journey.bg2}}" style="background-image: url({{journey.bg}})">
+		<div class="item-description">
+			<h3 class="item-description-header">{{journey.name}}</h3>
+			<p class="item-description-content1">{{journey.content1}}</p>
+			<p class="item-description-content2">{{journey.content2}}</p>
+		</div>
+	</section>
+
+	</section>
+
+
+<!-- 
+		<section class="item item1" data-bg="img/i1.jpg">
+			<div class="item-description">
+				<h3 class="item-description-header">Azor islands</h3>
+				<p class="item-description-content1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, sit cum.</p>
+				<p class="item-description-content2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, doloribus molestias, hic rem ut inventore repellat dolore corporis ab enim est incidunt fugit vitae et impedit. Cupiditate, laudantium esse.</p>
+			</div>
+		</section>
 		<section class="item item2" data-bg="img/i2.jpg"></section>
 		<section class="item item3" data-bg="img/i3.jpg"></section>
 		<section class="item item4" data-bg="img/i4.jpg"></section>
@@ -24,7 +44,10 @@
 		<section class="item item6" data-bg="img/i6.jpg"></section>
 		<section class="item item7" data-bg="img/i7.jpg"></section>
 		<section class="item item8" data-bg="img/i8.jpg"></section>
-		<section class="item item9" data-bg="img/i9.jpg"></section>
+		<section class="item item9" data-bg="img/i9.jpg"></section> 
+-->
+
+
 	</div>
 
 	<div class="search">
@@ -32,7 +55,13 @@
 		<input class="search-input" type="text" placeholder="Type here please" autofocus>
 	</div>
 
-	<script src="jquery-2.1.4.min.js"></script>
-	<script src="app.js"></script>
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/app2.js"></script>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/app1.js"></script>
+
+
 </body>
-</html>
+</html> 
